@@ -8,21 +8,35 @@
     android:fitsSystemWindows="true"
     tools:context="com.caobo.drawerlayouttest.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+            android:layout_height="45dp"
+            android:background="@color/color_0176da">
 
-    </android.support.design.widget.AppBarLayout>
+            <TextView
+                android:text="clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-    <include layout="@layout/content_main"/>
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:text="caobo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <include layout="@layout/content_main"/>
+
+    </LinearLayout>
+
+
+
+
 
 
 
